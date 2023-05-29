@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+    @apply bg-gray-50
+}
+
+/** Hero component */
+.Hero-content{
+    @apply py-20 grid  lg:grid-cols-2  mx-4 lg:mx-8
+}
+
+.Hero-title{
+    @apply  text-gray-900 font-extrabold tracking-tighter leading-10 text-3xl lg:text-5xl text-start
+}
+
+.Hero-subtitle{
+    @apply text-gray-500 mt-4 font-inter leading-6
+}
+
+.Text-neon {
+    color: #0ea5e9; 
+  text-shadow:0 0 3px #0ea5e9, 0 0 50px #0ea5e9
+}
