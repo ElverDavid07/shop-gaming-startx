@@ -14,7 +14,7 @@ const page = () => {
   <div className=" mt-20">
    {(TypeCategory.length === 0) ? (
     <div className="text-center mt-32">
-        <img src="warning.avif" alt="" width={250} height={250} className="mx-auto" />
+        <Img src="/warning.png" alt="warning icon" width={250} height={250} className="mx-auto" />
      <span className="text-4xl font-inter block">Sin productos!!!</span>
     </div>
    ) : (

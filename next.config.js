@@ -5,6 +5,8 @@ const nextConfig = {
             {
                 protocol:"https",
                 hostname:"cdnx.jumpseller.com",
+                pathname:"/tienda-gamer-medellin/**",
+                port:""
                 
             }
         ]

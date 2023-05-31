@@ -8,7 +8,8 @@ const inter = Inter({
  weight: "400",
  style: ["normal"],
  display: "swap",
- variable:"--inter"
+ variable:"--inter",
+ preload:true
 });
 
 const metadata = {

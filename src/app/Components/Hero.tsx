@@ -1,3 +1,5 @@
+import Img from 'next/image'
+
 const Hero = () => {
  return (
   <section className="bg-gray-200">
@@ -12,7 +14,7 @@ const Hero = () => {
       tecnología y accesorios gaming
      </p>
     </div>
-    <img src="/mockup.avif" width={675} height={450} alt="mockup hero" className="mx-auto" />
+    <Img src="/mockup.png" width={675} height={450} alt="mockup hero" className="mx-auto" priority />
    </div>
   </section>
  );

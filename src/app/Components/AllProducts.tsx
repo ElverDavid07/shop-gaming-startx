@@ -37,7 +37,7 @@ const AllProducts = () => {
       </div>
      </div>
     ))}
-    <Skeleton />
+    {/* <Skeleton /> */}
    </div>
   </>
  );
