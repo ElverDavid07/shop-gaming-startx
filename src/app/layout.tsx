@@ -19,12 +19,10 @@ const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
  return (
-  <html lang="es" className={`${inter.variable}`} >
+  <html lang="es" className={`${inter.variable} scroll-smooth`} >
    <body>
-    <Providers>
      <Navbar />
      {children}
-    </Providers>
     <Footer/>
    </body>
   </html>

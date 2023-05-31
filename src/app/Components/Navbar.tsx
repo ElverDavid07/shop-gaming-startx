@@ -2,6 +2,8 @@
 import { Navbar,Button } from "flowbite-react";
 import {FaReact} from 'react-icons/fa'
 import {AiOutlineHome,AiOutlineTags,AiOutlineQuestionCircle,AiOutlineUser} from 'react-icons/ai'
+import Link from 'next/link'
+
 const NavbarComponent = () => {
  return (
     <Navbar fluid className="sticky top-0 z-10" >
@@ -16,22 +18,22 @@ const NavbarComponent = () => {
     <Navbar.Toggle />
   </div>
     <Navbar.Collapse>
-        <Navbar.Link href="/" active className="text-base flex items-center gap-x-1">
+        <Link href="/"  className="text-base flex items-center gap-x-1">
             <AiOutlineHome className="text-lg"/>
             inicio
-        </Navbar.Link>
-        <Navbar.Link href="/" className="text-base flex items-center gap-x-1">
+        </Link>
+        <Link href="#products" className="text-base flex items-center gap-x-1">
             <AiOutlineTags className="text-lg"/>
             product
-        </Navbar.Link>
-        <Navbar.Link href="/" className="text-base flex items-center gap-x-1">
+        </Link>
+        <Link href="/" className="text-base flex items-center gap-x-1">
             <AiOutlineQuestionCircle className="text-lg"/>
             services
-        </Navbar.Link>
-        <Navbar.Link href="/" className="text-base flex items-center gap-x-1">
+        </Link>
+        <Link href="/" className="text-base flex items-center gap-x-1">
             <AiOutlineUser className="text-lg"/>
             contact
-        </Navbar.Link>
+        </Link>
     </Navbar.Collapse>
     </Navbar>
  )

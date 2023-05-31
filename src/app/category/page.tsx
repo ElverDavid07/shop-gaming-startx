@@ -1,15 +1,13 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-import { useGetOneCategoryQuery } from "@/Global_State/Api_Slice";
-import { Spinner, Rating, Button, Tooltip } from "flowbite-react";
+import {Rating, Button, Tooltip } from "flowbite-react";
 import { RiShoppingCart2Line } from "react-icons/ri";
 import {Products} from '@utils/products'
+import Img from 'next/image'
 
 const page = () => {
  const params = useSearchParams();
  const category = params.get("category");
- const { data, isLoading } = useGetOneCategoryQuery(category);
- console.log(data);
  const TypeCategory = Products.filter(product => product.category === category)
  console.log(TypeCategory)
  return (
@@ -24,10 +22,10 @@ const page = () => {
      {TypeCategory?.map(({ description, image, price, name },i) => (
       <div key={i} className="bg-white py-2 px-2 rounded-lg lg:w-10/12 border shadow">
        <h2 className="text-center font-medium text-lg mb-3">{name} </h2>
-       <img src={image} alt="" width={250} height={250} className="mx-auto my-5" />
+       <Img src={image} alt={name} width={250} height={250} className="mx-auto my-5" />
        <p className="font-inter text-base text-gray-700">{description} </p>
        <div className=" flex justify-between items-center">
-        <span className=" my-2 text-lg font-inter block">${price} USD </span>
+        <span className=" my-2 text-lg font-inter block">${price} COL </span>
         <Rating>
          <Rating.Star />
          <Rating.Star />
