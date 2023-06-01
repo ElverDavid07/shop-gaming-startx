@@ -1,25 +1,25 @@
 "use client";
-import { useSearchParams } from "next/navigation";
-import {Rating, Button, Tooltip } from "flowbite-react";
+import { useSearchParams,useParams } from "next/navigation";
+import { Rating, Button, Tooltip } from "flowbite-react";
 import { RiShoppingCart2Line } from "react-icons/ri";
-import {Products} from '@utils/products'
-import Img from 'next/image'
+import { Products } from "@utils/products";
+import Img from "next/image";
 
 const page = () => {
- const params = useSearchParams();
- const category = params.get("category");
- const TypeCategory = Products.filter(product => product.category === category)
- console.log(TypeCategory)
+    const {params} = useParams()
+    console.log(params)
+ const TypeCategory = Products.filter((product) => product.category === params);
+
  return (
   <div className=" mt-20">
-   {(TypeCategory.length === 0) ? (
+   {TypeCategory.length === 0 ? (
     <div className="text-center mt-32">
-        <Img src="/warning.png" alt="warning icon" width={250} height={250} className="mx-auto" />
+     <Img src="/warning.png" alt="warning icon" width={250} height={250} className="mx-auto" />
      <span className="text-4xl font-inter block">Sin productos!!!</span>
     </div>
    ) : (
     <div className="mx-4 lg:mx-6 grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 lg:gap-y-5">
-     {TypeCategory?.map(({ description, image, price, name },i) => (
+     {TypeCategory?.map(({ description, image, price, name }, i) => (
       <div key={i} className="bg-white py-2 px-2 rounded-lg lg:w-10/12 border shadow">
        <h2 className="text-center font-medium text-lg mb-3">{name} </h2>
        <Img src={image} alt={name} width={250} height={250} className="mx-auto my-5" />

@@ -1,15 +1,15 @@
 import "./Styles/globals.css";
-import { Inter } from "next/font/google";
+import { Rubik } from "next/font/google";
 import Providers from "./providers";
 import Navbar from "@components/Navbar";
 import Footer from "./Components/Footer";
-const inter = Inter({
+const rubik = Rubik({
+  preload:true,
  subsets: ["latin"],
  weight: "400",
  style: ["normal"],
  display: "swap",
- variable:"--inter",
- preload:true
+ variable:"--rubik",
 });
 
 const metadata = {
@@ -20,7 +20,7 @@ const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
  return (
-  <html lang="es" className={`${inter.variable} scroll-smooth`} >
+  <html lang="es" className={`${rubik.variable}`} >
    <body>
      <Navbar />
      {children}

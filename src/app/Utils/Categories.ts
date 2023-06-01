@@ -1,41 +1,41 @@
 export const DataCategory = [
  {
-  name: "Teclado",
+  name: "teclado",
   category: "Teclados",
   image: "/Categorises/teclado.png",
  },
  {
-  name: "Cpu",
+  name: "cpu",
   category: "Cpu",
   image: "/Categorises/cpu.png",
  },
  {
-  name: "SillaGamer",
+  name: "silla gamer",
   category: "Sillas gamer",
   image: "/Categorises/silla-gamer.png",
  },
  {
-  name: "Mause",
+  name: "mause",
   category: "Mauses",
   image: "/Categorises/mause.png",
  },
  {
-  name: "Procesador",
+  name: "procesador",
   category: "Procesadores",
   image: "/Categorises/procesador.png",
  },
  {
-  name: "Pantalla",
+  name: "pantalla",
   category: "Pantallas",
   image: "/Categorises/pantalla.png",
  },
  {
-  name: "Disipador",
+  name: "disipador",
   category: "Disipadores",
   image: "/Categorises/disipador.png",
  },
  {
-  name: "Microfono",
+  name: "microfono",
   category: "Microfonos",
   image: "/Categorises/microfono.png",
  },

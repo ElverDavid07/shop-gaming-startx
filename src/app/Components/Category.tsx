@@ -7,7 +7,7 @@ const Category = () => {
  const router = useRouter();
 
  const submitCategory = (name: string) => {
-  router.push(`/category?category=${name}`);
+  router.push(`/category/${name}`);
  };
  return (
   <div className="my-20">
