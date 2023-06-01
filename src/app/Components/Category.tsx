@@ -19,7 +19,7 @@ const Category = () => {
       className="bg-white py-5 px-2 rounded-md border cursor-pointer hover:scale-105 transition-all ease-in"
       onClick={() => submitCategory(name)}
      >
-      <Img src={image} alt={`image ${name}`} width={450} height={450} className="mx-auto" />
+      <Img src={image} alt={`image ${name}`} width={450} height={450} className="mx-auto" priority={true}/>
       <span className="block text-center font-inter text-lg mt-2">{category} </span>
      </div>
     ))}
