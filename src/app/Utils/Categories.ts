@@ -2,41 +2,41 @@ export const DataCategory = [
  {
   name: "teclado",
   category: "Teclados",
-  image: "/Categorises/teclado.png",
+  image: "/categorises/teclado.png",
  },
  {
   name: "cpu",
   category: "Cpu",
-  image: "/Categorises/cpu.png",
+  image: "/categorises/cpu.png",
  },
  {
   name: "silla gamer",
   category: "Sillas gamer",
-  image: "/Categorises/silla-gamer.png",
+  image: "/categorises/silla-gamer.png",
  },
  {
   name: "mause",
   category: "Mauses",
-  image: "/Categorises/mause.png",
+  image: "/categorises/mause.png",
  },
  {
   name: "procesador",
   category: "Procesadores",
-  image: "/Categorises/procesador.png",
+  image: "/categorises/procesador.png",
  },
  {
   name: "pantalla",
   category: "Pantallas",
-  image: "/Categorises/pantalla.png",
+  image: "/categorises/pantalla.png",
  },
  {
   name: "disipador",
   category: "Disipadores",
-  image: "/Categorises/disipador.png",
+  image: "/categorises/disipador.png",
  },
  {
   name: "microfono",
   category: "Microfonos",
-  image: "/Categorises/microfono.png",
+  image: "/categorises/microfono.png",
  },
 ];
