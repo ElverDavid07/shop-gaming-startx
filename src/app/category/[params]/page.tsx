@@ -1,13 +1,13 @@
 "use client";
-import { useSearchParams,useParams } from "next/navigation";
+import { useParams } from "next/navigation";
 import { Rating, Button, Tooltip } from "flowbite-react";
 import { RiShoppingCart2Line } from "react-icons/ri";
 import { Products } from "@utils/products";
 import Img from "next/image";
 
-const page = () => {
-    const {params} = useParams()
-    console.log(params)
+const Categories = () => {
+ const { params } = useParams();
+ console.log(params);
  const TypeCategory = Products.filter((product) => product.category === params);
 
  return (
@@ -51,4 +51,4 @@ const page = () => {
  );
 };
 
-export default page;
+export default Categories;
