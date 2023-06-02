@@ -10,7 +10,7 @@ module.exports = {
     extend: {
 
       fontFamily: {
-        inter: ["var(--rubik)"]
+        rubik: ["var(--rubik)"]
       },
       animation: {
         'spin-slow': 'spin 8s linear infinite'

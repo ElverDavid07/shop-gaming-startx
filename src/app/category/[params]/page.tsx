@@ -1,9 +1,10 @@
 "use client";
 import { useParams } from "next/navigation";
-import { Rating, Button, Tooltip } from "flowbite-react";
+import {Button, Tooltip } from "flowbite-react";
 import { RiShoppingCart2Line } from "react-icons/ri";
 import { Products } from "@utils/products";
 import Img from "next/image";
+import Star from "@/Components/Star";
 
 const Categories = () => {
  const { params } = useParams();
@@ -15,24 +16,18 @@ const Categories = () => {
    {TypeCategory.length === 0 ? (
     <div className="text-center mt-32">
      <Img src="/warning.png" alt="warning icon" width={250} height={250} className="mx-auto" />
-     <span className="text-4xl font-inter block">Sin productos!!!</span>
+     <span className="text-4xl font-extrabold block">Sin productos!!!</span>
     </div>
    ) : (
     <div className="mx-4 lg:mx-6 grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 lg:gap-y-5">
-     {TypeCategory?.map(({ description, image, price, name }, i) => (
+     {TypeCategory?.map(({ description, image, price, name,rating }, i) => (
       <div key={i} className="bg-white py-2 px-2 rounded-lg lg:w-10/12 border shadow">
        <h2 className="text-center font-medium text-lg mb-3">{name} </h2>
-       <Img src={image} alt={name} width={250} height={250} className="mx-auto my-5" />
-       <p className="font-inter text-base text-gray-700">{description} </p>
+       <Img src={image} alt={name} width={250} height={250} className="mx-auto my-5" priority={true} />
+       <p className="font-rubik text-base text-gray-700">{description} </p>
        <div className=" flex justify-between items-center">
-        <span className=" my-2 text-lg font-inter block">${price} COL </span>
-        <Rating>
-         <Rating.Star />
-         <Rating.Star />
-         <Rating.Star />
-         <Rating.Star />
-         <Rating.Star />
-        </Rating>
+        <span className=" my-2 text-lg font-rubik block">${price} COL </span>
+      <Star Rating={rating}/>
        </div>
        <div className="flex items-center justify-between mt-2">
         <Button className="bg-sky-500 hover:bg-sky-600">Comprar ahora</Button>

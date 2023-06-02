@@ -17,5 +17,6 @@ export interface Product {
     image:string,
     price:string,
     category:string
+    rating:number
 
 }

@@ -20,7 +20,7 @@ const Category = () => {
       onClick={() => submitCategory(name)}
      >
       <Img src={image} alt={`image ${name}`} width={450} height={450} className="mx-auto" priority={true}/>
-      <span className="block text-center font-inter text-lg mt-2">{category} </span>
+      <span className="block text-center font-rubik text-lg mt-2">{category} </span>
      </div>
     ))}
    </div>

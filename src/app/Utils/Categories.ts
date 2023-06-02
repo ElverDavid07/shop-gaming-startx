@@ -5,17 +5,17 @@ export const DataCategory = [
   image: "/teclado.png",
  },
  {
-  name: "cpu",
-  category: "Cpu",
+  name: "chasis",
+  category: "Chasis",
   image: "/cpu.png",
  },
  {
-  name: "silla gamer",
+  name: "silla-gamer",
   category: "Sillas gamer",
   image: "/silla-gamer.png",
  },
  {
-  name: "mause",
+  name: "mauses",
   category: "Mauses",
   image: "/mause.png",
  },

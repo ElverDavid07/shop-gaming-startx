@@ -18,7 +18,7 @@ body{
 }
 
 .Hero-subtitle{
-    @apply text-gray-500 mt-4 font-inter leading-6 text-lg
+    @apply text-gray-500 mt-4 font-rubik leading-6 text-lg
 }
 
 .Text-neon {

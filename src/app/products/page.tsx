@@ -1,25 +1,21 @@
 "use client";
 import { Button, Tooltip } from "flowbite-react";
-import { RiShoppingCart2Line, RiArrowRightLine } from "react-icons/ri";
+import { RiShoppingCart2Line } from "react-icons/ri";
 import { Products } from "@utils/products";
 import Img from "next/image";
-import Star from "./Star";
-import Link from "next/link";
-
-const AllProducts = () => {
- const filteredProducts = Products.filter((product) => product.rating === 5).reverse()
-
+import Star from "@components/Star";
+const ProductsComponent = () => {
  return (
-  <>
+  <div className="mx-4 lg:mx-8">
    <h2 className="text-3xl font-bold tracking-tighter text-indigo-600 my-20">
-    Productos mas populares
+    Todos los productos
    </h2>
 
    <div id="products" className=" grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 lg:gap-y-5">
-    {filteredProducts.map(({ description, image, price, name, rating }, i) => (
+    {Products.map(({ description, image, price, name, rating }, i) => (
      <div key={i} className="bg-white py-2 px-2 rounded-lg lg:w-10/12 border shadow">
       <h2 className="text-center font-medium text-lg mb-3">{name} </h2>
-      <Img src={image} alt={name} width={250} height={250} className="mx-auto my-5" />
+      <Img src={image} alt={name} width={250} height={250} className="mx-auto my-5" priority={true} />
       <p className="font-inter text-base text-gray-700">{description} </p>
       <div className=" flex justify-between items-center">
        <span className=" my-2 text-lg font-rubik block">${price} COL </span>
@@ -37,17 +33,8 @@ const AllProducts = () => {
      </div>
     ))}
    </div>
-   <div className="flex  justify-end mt-16">
-    <Link
-     href={"/products"}
-     className="flex font-rubik text-lg text-sky-500 underline items-center gap-x-1 group"
-    >
-     Ver todos los productos
-     <RiArrowRightLine className="text-xl group-hover:translate-x-2 transition-all" />
-    </Link>
-   </div>
-  </>
+  </div>
  );
 };
 
-export default AllProducts;
+export default ProductsComponent;
