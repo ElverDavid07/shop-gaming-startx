@@ -227,4 +227,86 @@ export const Products: ProductsGamer[] = [
   category: "chasis",
   rating: 5,
  },
+ //  pantallas
+ {
+  name: "ASUS 28 4K GAMING (1MS-60)",
+  description:
+   "Monitor de gaming ASUS VP28UQG: 28 pulgadas, Adaptive-Sync/FreeSync™, Antiparpadeo, Filtro de luz azul",
+  image:
+   "https://cdnx.jumpseller.com/tienda-gamer-medellin/image/25661650/resize/300/300?1657564372",
+  price: "1.680.000",
+  category: "pantallas",
+  rating: 4.5,
+ },
+ {
+  name: "27 ULTIMATE PRO ( FHD - 165HZ - 1MS )",
+  description:
+   "MONITOR PIVOT JYR 27 PULGADAS LO PUEDES MANEJAR HORIZONTAL Y VERTICALMENTE 165HZ - RESPUESTA DE UN 1MS",
+  image:
+   "https://cdnx.jumpseller.com/tienda-gamer-medellin/image/35799151/resize/300/300?1685240723",
+  price: "1.340.000",
+  category: "pantallas",
+  rating: 4,
+ },
+ {
+  name: "ASUS 29 TUF GAMING CURVO (1MS-200HZ)",
+  description:
+   "Monitor gamer curvo de 29.5 pulgadas, WFHD ultra ancho 21:9 (2560X1080), 200Hz, MPRT de 1ms, Extreme Low Motion Blur™, 127% sRGB, HDR, FreeSync™ Premium",
+  image:
+   "https://cdnx.jumpseller.com/tienda-gamer-medellin/image/35571178/resize/300/300?1684857422",
+  price: "2.580.000",
+  category: "pantallas",
+  rating: 5,
+ },
+ {
+  name: "ACER 24 IPS SLIM GAMING (75H) - ACER",
+  description:
+   "60,5 cm (23,8) - 16:9 - Full HD - Resolución máxima 1920 x 1080 - Relación de contraste 100.000.000:1 - Brillo 250 cd/m - Color Negro",
+  image:
+   "https://cdnx.jumpseller.com/tienda-gamer-medellin/image/32671841/resize/300/300?1677692306",
+  price: "740.000",
+  category: "pantallas",
+  rating: 4,
+ },
+ {
+  name: "LG 27 GAMING ULTRAGEAR (165Hz-1MS)",
+  description:
+   "27GQ50F-B Monitor para juegos UltraGear™ Full HD de 27,Pantalla Full HD de 27” (1920 x 1080),Frecuencia de actualización de 165 Hz",
+  image:
+   "https://cdnx.jumpseller.com/tienda-gamer-medellin/image/33272446/resize/300/300?1679341211",
+  price: "1.080.000",
+  category: "pantallas",
+  rating: 4,
+ },
+ //    Procesadores
+ {
+  name: "VENTILADOR TORRE SICKFLOW WHITE ARGB - COOLER MASTER",
+  description:
+   "PERFIL DEL VENTILADOR RGB direccionable TIPO DE COJINETE DE VENTILADOR Cojinete de rifle VELOCIDAD DEL VENTILADOR 650-1800 RPM ± 10%     FLUJO DE AIRE DEL VENTILADOR 62 CFM ± 10%",
+  image:
+   "https://cdnx.jumpseller.com/tienda-gamer-medellin/image/16160173/resize/300/300?1635870708",
+  price: "100.000",
+  category: "disipadores",
+  rating: 4.5,
+ },
+ {
+  name: "VENTILADOR DUO 12 RGB - AEROCOOL",
+  description:
+   "Ventilador de 120 mm con conector de 6 pines con un elegante diseño de iluminación de anillo LED RGB doble. Acceda a 16,8 millones de colores utilizando placas base RGB direccionables compatibles, incluidas ASUS Aura Sync, MSI Mystic Light Sync y Gigabyte RGB Fusion. Requiere placa base o concentrador RGB direccionable (H66F / H106C). Viene con un cable adaptador de 6 pines para conectar su ventilador con placas base RGB direccionables compatibles.",
+  image:
+   "https://cdnx.jumpseller.com/tienda-gamer-medellin/image/29582085/resize/300/300?1677735313",
+  price: "70.000",
+  category: "disipadores",
+  rating: 4,
+ },
+ {
+  name: "LIQUIDA FREEZER II 240 ARGB - ARCTIC",
+  description:
+   "Se espera que AMD lance el zócalo AM5, el sucesor de su popular plataforma AM4, a fines de 2022. Dado que todas las dimensiones mecánicas siguen siendo idénticas, ARCTIC garantiza la compatibilidad con nuestros refrigeradores en los nuevos procesadores de AMD.",
+  image:
+   "https://cdnx.jumpseller.com/tienda-gamer-medellin/image/26386542/resize/300/300?1660529501",
+  price: "940.000",
+  category: "disipadores",
+  rating: 5,
+ },
 ];

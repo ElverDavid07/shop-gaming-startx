@@ -20,17 +20,17 @@ export const DataCategory = [
   image: "/mause.png",
  },
  {
-  name: "procesador",
+  name: "procesadores",
   category: "Procesadores",
   image: "/procesador.png",
  },
  {
-  name: "pantalla",
+  name: "pantallas",
   category: "Pantallas",
   image: "/pantalla.png",
  },
  {
-  name: "disipador",
+  name: "disipadores",
   category: "Disipadores",
   image: "/disipador.png",
  },

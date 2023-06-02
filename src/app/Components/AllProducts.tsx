@@ -12,7 +12,7 @@ const AllProducts = () => {
  return (
   <>
    <h2 className="text-3xl font-bold tracking-tighter text-indigo-600 my-20">
-    Productos mas populares
+    Productos populares
    </h2>
 
    <div id="products" className=" grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 lg:gap-y-5">
